@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:background="@drawable/dashboard"
+    tools:context=".DashboardActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:onClick="next_view3"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="209dp"
+        android:layout_marginRight="209dp"
+        android:layout_marginBottom="246dp"
+        android:elevation="20dp"
+        android:background="@drawable/nutridairy" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="152dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="254dp"
+        android:background="@drawable/healthtips1"
+        android:elevation="20dp"
+        android:onClick="next_view4" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:onClick="next_view1"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="210dp"
+        android:layout_marginRight="210dp"
+        android:layout_marginBottom="468dp"
+        android:elevation="20dp"
+        android:background="@drawable/nutriplan" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:onClick="next_view2"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="469dp"
+        android:elevation="20dp"
+        android:background="@drawable/nutricalc"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="249dp"
+        android:layout_marginRight="249dp"
+        android:layout_marginBottom="436dp"
+        android:text="NutriPlan"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="433dp"
+        android:text="NutriCalc"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="245dp"
+        android:layout_marginRight="245dp"
+        android:layout_marginBottom="212dp"
+        android:text="DiaryPlan"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="221dp"
+        android:text="HealthTips"
+        android:textSize="20sp" />
+</RelativeLayout>
