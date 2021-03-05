@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard"
+    android:padding="20dp"
+    tools:context=".NotebookActivity">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"
+        android:textSize="30sp"
+        android:id="@+id/txttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Nutri Note Book" />
+
+    <EditText
+        android:id="@+id/ednote"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_bg"
+        android:ems="10"
+        android:hint="Add Note"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edcomment"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edit_bg"
+        android:ems="10"
+        android:hint="Comment"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnsaveview"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg3"
+        android:text="Save to View" />
+
+    <TextView
+        android:id="@+id/txtnote"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtcomment"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="" />
+</LinearLayout>

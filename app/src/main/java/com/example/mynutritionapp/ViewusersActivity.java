@@ -44,19 +44,18 @@ public class ViewusersActivity extends AppCompatActivity {
         dialog.show();
         ref.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
+            public void onDataChange(DataSnapshot snapshot) {
                 nutriUsers.clear();
                 for (DataSnapshot Snap : snapshot.getChildren()) {
-                    NutriUser nutriUser = snapshot.getValue(NutriUser.class);
+                    NutriUser nutriUser = Snap.getValue(NutriUser.class);
                     nutriUsers.add(nutriUser);
                 }
                 adapter.notifyDataSetChanged();
                 dialog.dismiss();
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                message("DATABASE LOCKED", "Sorry we could not get access to the DB. Contact your Developer for help");
+                message("DATABASE LOCKED", "Sorry, we couldn't access the DB. Contact your Developer for help");
 
             }
         });

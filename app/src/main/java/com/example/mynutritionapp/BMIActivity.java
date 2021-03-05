@@ -54,7 +54,7 @@ public class BMIActivity extends AppCompatActivity
                     Double BMI;
                     BMI = Double.parseDouble(weight)/((Double.parseDouble(height)*Double.parseDouble(height)/100));
 
-                  if (BMI < 15) {
+                  if (BMI < 16) {
                         txtInter.setText("Severly Under Weight");
                     } else if (BMI <18.5){
                         txtInter.setText("Under Weight");

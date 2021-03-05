@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/edit_bg"
         android:ems="10"
-        android:hint="kg"
+        android:hint="gms"
         android:inputType="numberDecimal"
         android:padding="12dp" />
     <TextView

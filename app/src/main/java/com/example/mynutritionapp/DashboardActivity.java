@@ -14,11 +14,21 @@ public class DashboardActivity extends AppCompatActivity {
     private WebView webView;
     ImageView img;
     ImageView img1;
+    ImageView img2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        img2 = findViewById(R.id.imageView5);
+        img2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardActivity.this,NotebookActivity.class);
+                startActivity(intent);
+            }
+        });
 
         img1 = findViewById(R.id.imageView7);
         img1.setOnClickListener(new View.OnClickListener() {
@@ -58,4 +68,5 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent = new Intent(DashboardActivity.this, HealthTipsActivity.class);
         startActivity(intent);
     }
+
 }

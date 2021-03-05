@@ -66,13 +66,11 @@ public class MealplanActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task) {
                             dialog.dismiss();
                             if (task.isSuccessful()) {
-                            message("SUCCESS", "Saving Done");
+                            message("BRAVO", "Saving Done");
                             clear();
                         } else {
                                 message("FAILED", "Saving failed");
                             }
-
-
 
                         }
                     });
